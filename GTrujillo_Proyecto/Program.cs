@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Text.RegularExpressions;
 
 namespace GTrujillo_Proyecto
 {
@@ -29,7 +30,7 @@ namespace GTrujillo_Proyecto
 
             Console.WriteLine("INGRESAR OPCION:");
             int opcion = Convert.ToInt16(Console.ReadLine());
-
+            
             switch (opcion)
             {
 
@@ -107,7 +108,7 @@ namespace GTrujillo_Proyecto
                         double resul2_2 = (mt / 1000);
                         if (mt < 1000)
                         {
-                            Console.WriteLine("EL VALOR EN METROS DEBE SER MAYOR IGUAL A 1000 CM:\n\n");
+                            Console.WriteLine("EL VALOR EN METROS DEBE SER MAYOR IGUAL A 1000 METROS:\n\n");
                             MenuPrincipal();
 
                         }
@@ -135,7 +136,7 @@ namespace GTrujillo_Proyecto
                             Console.WriteLine("EL RESULTADO DE LA CONVERSIÓN DE KM A METROS ES: " + resul2_3 + " METROS\n");
                             contLong++;
                             contTotal++;
-                            historialConversiones.Add(contTotal + ".- "+ km + " KM A METROS : "+resul2_3+ " METROS.");
+                            historialConversiones.Add(contTotal + ".- "+ km + " KM A METROS ES : "+resul2_3+ " METROS.");
                             MenuPrincipal();
                         }
                     }
